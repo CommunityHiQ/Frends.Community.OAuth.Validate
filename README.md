@@ -73,7 +73,7 @@ Parses the provided OAuth JWT token or Authorization header with the option of s
 | Property | Type | Description | Example |
 | ---------|------|-------------|---------|
 | ClaimPrincipal | [System.Security.Claims.ClaimsPrincipal](https://docs.microsoft.com/en-us/dotnet/api/system.security.claims.claimsprincipal?view=netframework-4.7.2) | The ClaimsPrincipal parsed from the token | |
-| Token | [System.IdentityModel.Tokens.JwtSecurityToken](https://msdn.microsoft.com/en-us/library/system.identitymodel.tokens.jwtsecuritytoken(v=vs.114).aspx) | The token |  |
+| Token | [System.IdentityModel.Tokens.JwtSecurityToken](https://msdn.microsoft.com/en-us/library/system.identitymodel.tokens.jwtsecuritytoken(v=vs.114).aspx) | The token. If you want the token as a string use .ToString() method (e.g. #result.Token.ToString()) |  |
 
 # Building
 Clone a copy of the repo

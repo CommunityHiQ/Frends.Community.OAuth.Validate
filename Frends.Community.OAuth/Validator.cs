@@ -55,6 +55,11 @@ namespace Frends.Community.OAuth
             return await configurationManager.GetConfigurationAsync(cancellationToken).ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Validates the provided OAuth JWT token or Authorization header. Documentation: https://github.com/CommunityHiQ/Frends.Community.OAuth/
+        /// </summary>
+        /// <param name="input">Parameters for the token validation</param>
+        /// <returns>string</returns>
         public static async Task<ParseResult> Validate(ValidateInput input, CancellationToken cancellationToken)
         {
             return await ParseToken(input, new ParseOptions
@@ -65,6 +70,12 @@ namespace Frends.Community.OAuth
             }, cancellationToken);
         }
 
+        /// <summary>
+        /// Parses the provided OAuth JWT token or Authorization header with the option of skipping validations Documentation: https://github.com/CommunityHiQ/Frends.Community.OAuth/
+        /// </summary>
+        /// <param name="input">Parameters for the token parsing.</param>
+        /// <param name="options">Options to skip different validations in the token parsing. </param>
+        /// <returns>Object {ClaimsPrincipal ClaimsPrincipal, SecurityToken Token} </returns>
         public static async Task<ParseResult> ParseToken([PropertyTab]ValidateInput input, [PropertyTab]ParseOptions options, CancellationToken cancellationToken)
         {
             var config = await GetConfiguration(input, cancellationToken).ConfigureAwait(false);
