@@ -107,4 +107,4 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 | Version | Changes |
 | ----- | ----- |
-| 0.0.1 | Initial version of OAuth Task |
+| 1.0.0 | Initial version of OAuth Task |
