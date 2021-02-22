@@ -1,5 +1,7 @@
 # Frends.Community.OAuth
 
+This Task is deprecated. Use [Frends.Community.OAuth](https://github.com/CommunityHiQ/Frends.Community.OAuth) Tasks insted.
+
 FRENDS community Task for validating and parsing OAuth JWT tokens
 
 - [Frends.Community.OAuth](#frendscommunityoauth)
